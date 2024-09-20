@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achieve Your Dream Figure</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <section id="screen1" class="screen1 screen">
+        <div class="screen1__left-content">
+          <h1 class="screen1-heading">
+            Achieve Your Dream Figure with Quick and Effective Workouts.
+          </h1>
+          <p class="screen1-subheading">
+            Take this 30-second quiz <br />
+            to find out how
+          </p>
+          <div class="screen1__buttons">
+            <button class="start-button" data-gender="women">
+              <img
+                src="assets/radiobutton.svg"
+                width="18"
+                height="18"
+                alt="radio button"
+                class="start-button-radio"
+              />
+              <div>
+                <img
+                  src="assets/female.svg"
+                  width="24"
+                  height="24"
+                  alt="female"
+                />
+                <span>Women start here</span>
+              </div>
+            </button>
+
+            <button class="start-button" data-gender="men">
+              <img
+                src="assets/radiobutton.svg"
+                width="18"
+                height="18"
+                alt="radio button"
+                class="start-button-radio"
+              />
+              <div>
+                <img src="assets/male.svg" width="24" height="24" alt="male" />
+                <span>Men start here</span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="screen1__right-content">
+          <img src="assets/women.png" alt="women" />
+        </div>
+
+        <!-- smaller devices screen1 buttons -->
+        <div class="container screen1__bottom-wrapper">
+          <div class="screen1__bottom-container">
+            <div class="screen1__bottom-buttons">
+              <button class="start-button" data-gender="women">
+                <img
+                  src="assets/radiobutton.svg"
+                  width="18"
+                  height="18"
+                  alt="radio button"
+                  class="start-button-radio"
+                />
+                <div>
+                  <img
+                    src="assets/female.svg"
+                    width="24"
+                    height="24"
+                    alt="female"
+                  />
+                  <span>Women start here</span>
+                </div>
+              </button>
+
+              <button class="start-button" data-gender="men">
+                <img
+                  src="assets/radiobutton.svg"
+                  width="18"
+                  height="18"
+                  alt="radio button"
+                  class="start-button-radio"
+                />
+                <div>
+                  <img
+                    src="assets/male.svg"
+                    width="24"
+                    height="24"
+                    alt="male"
+                  />
+                  <span>Men start here</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen1__logos-container">
+          <div class="screen1__logos">
+            <img src="assets/womens-health.svg" alt="Women's Health" />
+            <img src="assets/forbes.svg" alt="Forbes" />
+            <img src="assets/mayo-clinic.svg" alt="Mayo Clinic" />
+            <img
+              src="assets/wall-street-journal.svg"
+              alt="The Wall Street Journal"
+            />
+            <img src="assets/vogue.svg" alt="Vogue" />
+          </div>
+        </div>
+      </section>
+
+      <section id="screen2" class="screen hidden">
+        <div class="quiz-container">
+          <div class="quiz-card">
+            <h1>
+              Achieve Your Dream Figure with Quick and Effective Workouts.
+            </h1>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <div class="question">
+              <h2>Do you think hours of cardio is beneficial for fat loss?</h2>
+              <p class="subtitle">
+                (Many people think doing cardio every day is the answer.)
+              </p>
+            </div>
+            <div class="answers">
+              <label class="answer-option">
+                <input type="radio" name="cardio" value="yes" />
+                <span class="checkmark"></span>
+                Yes
+              </label>
+              <label class="answer-option">
+                <input type="radio" name="cardio" value="no" />
+                <span class="checkmark"></span>
+                No
+              </label>
+              <label class="answer-option">
+                <input type="radio" name="cardio" value="not-sure" />
+                <span class="checkmark"></span>
+                Not Sure
+              </label>
+            </div>
+            <div class="navigation">
+              <button class="nav-button prev">&lt;</button>
+              <span class="question-count">1/5</span>
+              <button class="nav-button next">&gt;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen3" class="screen3 container hidden screen">
+        <div class="screen3__left-content">
+          <div class="loader-content">
+            <h2 class="screen3-heading">
+              Achieve Your Dream Figure with Quick and Effective Workouts.
+            </h2>
+            <p class="screen3-subheading">
+              Please wait while we match you with the best routine for your
+              dream figure<span class="loading-dots"></span>
+            </p>
+          </div>
+          <div id="fitness-loader" class="fitness-loader">
+            <div class="circular-loader">
+              <div class="loader-bg"></div>
+              <div class="loader-pulse"></div>
+              <div class="loader-spin"></div>
+              <div class="loader-text">Loading</div>
+            </div>
+
+            <div class="bouncing-dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+        <div class="screen3__right-content">
+          <img src="assets/women-2.png" alt="woman" />
+        </div>
+      </section>
+
+      <section id="screen4" class="screen hidden">
+        <div class="screen4-container">
+          <div class="screen4-card">
+            <h1>
+              Achieve Your Dream Figure with Quick and Effective Workouts.
+            </h1>
+
+            <h4>Great News</h4>
+            <p class="ideal-routine-text">
+              Your ideal routine has been calculated!
+            </p>
+
+            <div id="routine" class="routine"></div>
+
+            <p class="inspiration-text">
+              (This major metabolic breakthrough has already helped thousands to
+              get the body of their dreams... and you could be next.)
+            </p>
+            <button id="presentationBtn" class="screen4-button">
+              Watch Presentation Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <div class="footer-container">
+        <div class="footer-company-name">
+          &copy; Cool Company. All Rights Reserved
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a><a href="#">Terms of Service</a
+          ><a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <p class="footer-text">
+        Content, images, and assets on this site may not be reproduced,
+        transmitted, cached, distributed, or used in any way without prior
+        written consent. This site does not offer professional medical advice or
+        services. The ideas, procedures, and suggestions provided here are not a
+        substitute for consulting your physician and should be used only as part
+        of planning your overall health and fitness plan with medical
+        supervision. Our Terms of Service limit liability, and you must read and
+        agree to them before using this site. This information is not intended
+        to diagnose, treat, cure, or prevent any disease. Your results may
+        differ from any claims or testimonials. Typical results are not
+        guaranteed; most people do not achieve results because they do not take
+        consistent action. The examples shown are of individuals who made
+        lifestyle changes and are not typical. Achieving results requires
+        commitment and adherence to a plan
+      </p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
