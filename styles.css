@@ -221,25 +221,26 @@ select {
 }
 
 .screen1__bottom-wrapper {
-  position: relative;
   height: 500px;
   width: 100%;
+  max-width: 680px;
   display: none;
 }
 
 .screen1__bottom-container {
+  position: relative;
   background-image: url("assets/women.png");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  margin-top: -100px;
+  margin-top: -60px;
 }
 
 .screen1__bottom-buttons {
   position: absolute;
-  top: 50px;
+  bottom: 0px;
   display: none;
 }
 
@@ -274,6 +275,7 @@ select {
   }
 
   .screen1__bottom-buttons {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -283,6 +285,10 @@ select {
 
   .start-button {
     width: 300px;
+  }
+
+  .start-button-radio {
+    display: block;
   }
 }
 
@@ -322,17 +328,14 @@ select {
 
   .screen1__bottom-container {
     background-position: right;
-    margin-top: -120px;
-    margin-left: 40px;
     overflow: hidden;
   }
 
   .screen1__bottom-buttons {
     gap: 20px;
   }
-
-  .screen1__bottom-buttons {
-    margin-left: -40px;
+  .screen1__bottom-buttons button {
+    width: inherit;
   }
 }
 
