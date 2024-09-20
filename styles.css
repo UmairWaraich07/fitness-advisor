@@ -229,7 +229,7 @@ select {
 
 .screen1__bottom-container {
   position: relative;
-  background-image: url("assets/women.png");
+  background-image: url("/assets/women.png");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
