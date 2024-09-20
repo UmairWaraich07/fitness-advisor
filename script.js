@@ -302,9 +302,8 @@ async function fetchRoutine(data) {
 
   try {
     const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: "gpt-4o",
       messages,
-      temperature: 1.1,
     });
 
     const report = response.choices[0].message.content;
