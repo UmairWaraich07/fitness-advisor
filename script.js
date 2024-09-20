@@ -178,6 +178,9 @@ document.addEventListener("DOMContentLoaded", () => {
         selectedOption.querySelector("input").checked = true;
       }
     }
+
+    // Disable next button if no answer is selected
+    updateNextButtonState();
   }
 
   function getSelectedAnswer() {
@@ -198,6 +201,11 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  function updateNextButtonState() {
+    const selectedAnswer = getSelectedAnswer();
+    nextButton.disabled = !selectedAnswer;
+  }
+
   startButtons.forEach((button) => {
     button.addEventListener("click", () => startQuiz(button.dataset.gender));
   });
@@ -207,6 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
       answerOptions.forEach((opt) => opt.classList.remove("selected"));
       option.classList.add("selected");
       option.querySelector("input").checked = true;
+      updateNextButtonState();
     });
   });
 

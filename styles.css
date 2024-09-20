@@ -216,12 +216,12 @@ select {
 }
 
 .screen1__logos img {
-  height: 25px;
+  height: 20px;
   opacity: 0.8;
 }
 
 .screen1__bottom-wrapper {
-  height: 500px;
+  height: 400px;
   width: 100%;
   max-width: 680px;
   display: none;
@@ -315,15 +315,20 @@ select {
 
   .screen1__left-content {
     padding: 16px;
-    padding-top: 10vh;
+    padding-top: 5vh;
   }
 
   .screen1__logos-container {
     padding-inline: 16px;
+    bottom: 3vh;
+  }
+
+  .screen1__logos {
+    row-gap: 16px;
   }
 
   .screen1__logos img {
-    height: 20px;
+    height: 15px;
   }
 
   .screen1__bottom-container {
@@ -398,18 +403,13 @@ select {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .quiz-card h1 {
     font-size: 1.25rem;
   }
 
   .progress-bar {
     margin-bottom: 20px;
-  }
-
-  .question h2 {
-    font-size: 1rem;
-    margin-bottom: 3px;
   }
 
   .subtitle {
